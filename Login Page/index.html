@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <title>Simple Login Authentication</title>
+  </head>
+  <body>
+    <div id="login">
+      <h2>Login</h2>
+      <div class="log">
+      <form id="loginForm">
+        <div class="user-login">
+          <label for="loginUsername"></label>
+          <input type="text" id="loginUsername" placeholder="Username" required /><br />
+        </div>
+
+        <div class="user-pass">
+          <label for="loginPassword"></label>
+          <input type="password" id="loginPassword" placeholder="Password"  required /><br />
+        </div>
+
+        <div class="forget">
+          <label><input type="checkbox" />     Remember me</label>
+          <a href="#" onclick="showForgotPasswordForm()" style="color: white"
+            >Forgot Password?</a
+          >
+        </div>
+
+        <button type="button" onclick="authenticateUser()">Login</button>
+
+        <div class="register-link" style="color: white">
+          <p>
+            Don't have an account? <a href="register.html" style="color: white">Register</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    </div>
+
+    <div id="securedPage" style="display: none">
+      <h2>Welcome!</h2>
+      <p>
+        "Congratulations! <span id="currentUser"></span>!
+        You've successfully connected with my professional network on
+        LinkedIn. Let's make some meaningful connections.
+      </p>
+      <a href="https://www.linkedin.com/in/sanskruti-datrange-0b0a021b7/"
+        >
+        <i style="color: blue; size: 50px;" class="bx bxl-linkedin"></i>
+      </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<div id="registration" style="display: none;">
+  <h2>Register</h2>
+  <form id="registrationForm">
+      <label for="registerUsername">Username:</label>
+      <input type="text" id="registerUsername" required><br>
+
+      <label for="registerPassword">Password:</label>
+      <input type="password" id="registerPassword" required><br>
+
+      <button type="button" onclick="registerUser()">Register</button>
+  </form>
+</div>
+
+
+
+  </body>
+</html>

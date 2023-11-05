@@ -1,0 +1,74 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("adrien-olichon-RCAhiGJsUUE-unsplash.jpg");
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #registration {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #registration h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .user-register,
+  .user-pass {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .user-register input,
+  .user-pass input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  
+  .icon1,
+  .icon2 {
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  button:hover {
+    background-color: #cc6600;
+  }
+  
